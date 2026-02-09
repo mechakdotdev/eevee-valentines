@@ -1,0 +1,45 @@
+.health-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.health-bar-label {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.health-bar-background {
+  width: 450px;
+  height: 25px;
+  border: 2px solid #000;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.health-bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.health-bar-green {
+  background-color: #00aa00;
+}
+
+.health-bar-yellow {
+  background-color: #ffff00;
+}
+
+.health-bar-red {
+  background-color: #ff0000;
+}
+
+.health-bar-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}

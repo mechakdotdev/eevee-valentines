@@ -1,0 +1,88 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border: 4px solid #000;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #cc0000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.modal-message {
+  margin: 20px 0;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.modal-message p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #000;
+}
+
+.emotion {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+  margin-top: 12px !important;
+}
+
+.modal-close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #cc0000;
+  border: 2px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s;
+}
+
+.modal-close-btn:hover {
+  background-color: #ff0000;
+}

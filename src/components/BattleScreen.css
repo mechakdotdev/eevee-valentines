@@ -1,0 +1,55 @@
+.battle-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.battle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Sprites */
+.sprite {
+  position: absolute;
+  z-index: 5;
+}
+
+.sprite-opponent {
+  top: 5%;
+  right: 20%;
+  width: 12%;
+  height: 35%;
+}
+
+.sprite-player {
+  bottom: 30%;
+  left: 18%;
+  width: 15%;
+  height: 30%;
+}
+
+/* Health Bar Containers */
+.health-bar-container {
+  position: absolute;
+  z-index: 10;
+}
+
+.opponent-health {
+  top: 12%;
+  left: 9%;
+}
+
+.player-health {
+  bottom: 35%;
+  left: 60%;
+}
