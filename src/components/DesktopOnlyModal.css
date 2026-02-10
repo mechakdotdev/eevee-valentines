@@ -1,0 +1,60 @@
+.desktop-only-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.desktop-only-modal-content {
+  background-color: #fff;
+  border: 4px solid #000;
+  padding: clamp(2vh, 5vw, 5vh);
+  border-radius: 8px;
+  max-width: 90vw;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.modal-title {
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0 0 1.5vh 0;
+}
+
+.modal-message {
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 1vh 0;
+  line-height: 1.4;
+}
+
+.modal-emoji {
+  font-size: clamp(2rem, 10vw, 4rem);
+  margin-top: 2vh;
+}
+
+/* Show modal only on screens smaller than 1440px (tablet, mobile, small desktop) */
+@media (max-width: 1439px) {
+  .desktop-only-modal-overlay {
+    display: flex;
+  }
+}
+
+/* Hide on large desktop screens only (1440px and up) */
+@media (min-width: 1440px) {
+  .desktop-only-modal-overlay {
+    display: none;
+  }
+}

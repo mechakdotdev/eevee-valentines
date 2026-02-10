@@ -11,6 +11,10 @@ const BattleScreen: FC = () => {
   const [opponentHp, setOpponentHp] = useState(100);
   const [isVictoryOpen, setIsVictoryOpen] = useState(false);
   const [isGameOverOpen, setIsGameOverOpen] = useState(false);
+  const [isShaking, setIsShaking] = useState(false);
+  const [isJumping, setIsJumping] = useState(false);
+  const [isFainted, setIsFainted] = useState(false);
+  const [isAttacking, setIsAttacking] = useState(false);
 
   // Play Pokémon battle theme
   const { toggle: toggleMusic, isPlaying } = useAudio('/battle-theme.mp3', true);
@@ -20,10 +24,22 @@ const BattleScreen: FC = () => {
   const playerName = 'Eevee';
 
   const handleNo = useCallback(() => {
+    // Trigger shake animation on opponent
+    setIsShaking(true);
+    setTimeout(() => setIsShaking(false), 500); // Shake lasts 500ms
+    
+    // Trigger attack animation on player
+    setIsAttacking(true);
+    setTimeout(() => setIsAttacking(false), 600); // Attack lasts 600ms
+    
     setOpponentHp((prevHp) => Math.max(0, prevHp - (maxHp * 0.25)));
-  }, []);
+  }, [maxHp]);
 
   const handleYes = useCallback(() => {
+    // Trigger jump animation
+    setIsJumping(true);
+    setTimeout(() => setIsJumping(false), 800); // Jump lasts 800ms
+    
     setIsVictoryOpen(true);
   }, []);
 
@@ -37,6 +53,7 @@ const BattleScreen: FC = () => {
 
   useEffect(() => {
     if (opponentHp === 0) {
+      setIsFainted(true);
       setIsGameOverOpen(true);
     }
   }, [opponentHp]);
@@ -52,14 +69,14 @@ const BattleScreen: FC = () => {
       <img
         src="/sprites/trainer.png"
         alt="Trainer"
-        className="sprite sprite-opponent"
+        className={`sprite sprite-opponent ${isShaking ? 'shake' : ''} ${isFainted ? 'faint' : ''}`}
       />
 
       {/* Player Sprite (bottom-left) */}
       <img
         src="/sprites/evie.png"
         alt="Eevee"
-        className="sprite sprite-player"
+        className={`sprite sprite-player ${isJumping ? 'jump' : ''} ${isAttacking ? 'attack' : ''}`}
       />
 
       {/* Opponent Health Bar */}

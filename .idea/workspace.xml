@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58a4e560-85e5-4153-81a5-2042db7cf943" name="Changes" comment="">
+    <list default="true" id="58a4e560-85e5-4153-81a5-2042db7cf943" name="Changes" comment="Changes">
       <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -33,6 +33,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mechakdotdev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:mechakdotdev/eevee-valentines.git",
+    "accountId": "472ade9f-8da6-4b20-891c-578511b2251c"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -41,6 +53,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="39QvmUgjj7bXtMWr6KGU9QKQ8IQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,14 +64,14 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/mechak/Developer/Projects/React/eevee-valentines",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.general.GeneralConfigurable",
     "ts.external.directory.path": "/Users/mechak/Developer/Projects/React/eevee-valentines/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -70,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1770641267628</updated>
       <workItem from="1770641269151" duration="699000" />
-      <workItem from="1770650803677" duration="10137000" />
+      <workItem from="1770650803677" duration="15267000" />
     </task>
     <servers />
   </component>
@@ -81,6 +96,9 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add netlify config" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
